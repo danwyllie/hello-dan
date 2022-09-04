@@ -17,8 +17,6 @@ jobs:
     # Udacity Building a Continuous Integration Pipeline Exercise 6
     docker:
       - image: circleci/node:13.8.0
-    requires:
-      - print_hello
     steps:
       - run:
           name: "Say World"
@@ -44,3 +42,4 @@ workflows:
       - say-hello
       - print_hello
       - print_world
+          requires: [print_hello]
