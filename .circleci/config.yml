@@ -10,16 +10,16 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          name: "Say Hello"
-          command: echo "Hello"
+          name: "Say Hi"
+          command: echo "Hi"
   print-world:
     # Udacity Building a Continuous Integration Pipeline Exercise 6
     docker:
       - image: cimg/base:stable
     steps:
       - run:
-          name: "Say World"
-          command: echo "World"
+          name: "Say Dan"
+          command: echo "Dan"
   print-env:
     docker:
       - image: cimg/base:stable
